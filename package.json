@@ -1,0 +1,26 @@
+{
+  "name": "amagency-html",
+  "version": "1.0.0",
+  "description": "[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IronSummitMedia/startbootstrap-creative.git"
+  },
+  "author": "nz",
+  "license": "mit",
+  "bugs": {
+    "url": "https://github.com/IronSummitMedia/startbootstrap-creative/issues"
+  },
+  "homepage": "https://github.com/IronSummitMedia/startbootstrap-creative",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

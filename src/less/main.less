@@ -1,0 +1,184 @@
+//variables
+/*@theme-primary: #F05F40;//original orange*/
+@theme-dark: #222;
+
+/*@theme-primary: #CA7322; //orange*/
+@theme-shadows: #ff6f5c;//rojo shadows
+@theme-primary: #FF533C;//rojo mario
+
+
+
+@theme-secondary: #A5560E;
+
+
+
+@navbar-background: #fff;
+
+//includes
+/*@import "variables.less";*/
+@import "mixins.less";
+
+@import '../css/animate.min.css';
+@import 'navbar';
+@import 'creative';
+@import 'popups';
+
+html{
+    opacity: 0;
+}
+
+section#about{
+    position:relative;
+    p{
+        font-size: 1.5em;
+    }
+}
+section#we{
+    p{
+
+        font-size: 1.7em;
+    }
+    strong{
+
+        font-size: 1.5em;
+    }
+}
+a.service-link{
+    color:@theme-dark;
+
+
+    i{
+        transition: all .35s;
+        color:@theme-dark;
+
+    }
+
+    &:hover{
+        color: @theme-primary;
+        text-decoration:none;
+        i{
+            color: @theme-primary;
+
+        }
+    }
+}
+
+a:active,
+a:after,
+a:focus
+{
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+section#home {
+    overflow: hidden;
+
+    .header-content{
+        z-index: 1000;
+        /*position: relative;*/
+    }
+}
+#video-overlay{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    /*width: auto;*/
+    /*height: auto;*/
+    z-index: 20;
+    background: url(../src/img/grid.png) repeat;
+    /*background-size: cover;*/
+
+}
+video#bgvid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url(banner.jpg) no-repeat;*/
+    /*background-size: cover;*/
+}    
+
+.full-height{
+    height: 100%;
+    /*height: 100vh;*/
+}
+/* parallax*/
+
+.parallaxParent {
+    height: 100%;
+    /*height: 100vh;*/
+    overflow: hidden;
+    .parallax-image{
+        background-repeat: no-repeat;
+    }
+    & > * {
+        height: 200%;
+        position: relative;
+        top: -100%;
+    }
+        .parallax-content{
+            position:absolute;
+            top:0;
+        }
+}
+.parallaxParent-horizontal {
+    /*height: 100vh;*/
+    height: 100%;
+    overflow: hidden;
+/*    
+*/
+        /*background-size: 50% auto;*/
+        /*background-origin: border-box;*/
+    
+/*    
+    & > * {
+        height: 200%;
+        position: relative;
+        top: -100%;
+    }
+    .parallax-content{
+        position:absolute;
+        top:0;
+    }
+*/
+}
+
+
+
+.bottom-gradient{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    /*background-color: red;*/
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100 */
+    //background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+.top-gradient{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100 */
+    //background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
