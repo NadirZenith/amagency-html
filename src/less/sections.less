@@ -2,7 +2,19 @@
 // Sections
 
 .section-heading {
+    display: inline-block;
     margin-top: 0;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+    border-bottom: 3px solid @theme-primary;
+}
+section.bg-primary{
+    .section-heading {
+        border-bottom-color: #FFF;
+
+    }
+
 }
 
 
@@ -99,7 +111,7 @@ section#contact{
         padding-top: 20px;
 
         #physical-contact div{
-            margin-top: 60px 
+            /*margin-top: 60px */
         }
     }
 
