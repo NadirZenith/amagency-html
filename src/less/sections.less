@@ -1,0 +1,106 @@
+
+// Sections
+
+.section-heading {
+    margin-top: 0;
+}
+
+
+section#home {
+    overflow: hidden;
+
+    .header-content{
+        z-index: 1000;
+        /*position: relative;*/
+    }
+}
+
+#video-overlay{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 20;
+    background: url(../src/img/grid.png) repeat;
+    /*background-size: cover;*/
+
+}
+video#bgvid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /*background: url(banner.jpg) no-repeat;*/
+    /*background-size: cover;*/
+}    
+
+.full-height{
+    min-height: 100%;
+    /*height: 100vh;*/
+}
+
+.call-to-action {
+    h2 {
+        margin: 0 auto 20px;
+    }
+}
+section#about{
+
+}
+section#we{
+    p{
+        margin-bottom: 50px;
+    }
+    .text-info{
+        /*padding-top: 30px;*/
+        font-size: 22px;
+    }
+}
+
+.service-box{
+    margin-top: 30px;
+    a{
+        color:@theme-dark;
+
+        i{
+            transition: all .35s;
+            color:@theme-dark;
+
+        }
+
+        &:hover{
+            color: @theme-primary;
+            text-decoration:none;
+            i{
+                color: @theme-primary;
+
+            }
+        }
+    }
+}
+
+
+
+section#contact{
+    padding-top: 20px;
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    section#contact{
+        padding-top: 20px;
+
+        #physical-contact div{
+            margin-top: 60px 
+        }
+    }
+
+}
