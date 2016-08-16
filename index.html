@@ -1,513 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <title>AM - Artist Management</title>
+    <title>AM - Artist Management</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <!--font awesome-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <!-- Custom Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
 
-        <!-- app css -->
-        <link rel="stylesheet" href="dist/build/main.css" type="text/css">
-        <noscript>
+    <!-- app css -->
+    <link rel="stylesheet" href="dist/build/main.css" type="text/css">
+    <noscript>
         <style>
-            html{
+            html {
                 opacity: 1;
             }
         </style>
-        </noscript>
+    </noscript>
 
-        <link rel="stylesheet" href="src/css/bootstrap-responsive-debug.css" type="text/css">
+    <link rel="stylesheet" href="src/css/bootstrap-responsive-debug.css" type="text/css">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    </head>
+</head>
 
-    <body id="page-top">
+<body id="page-top">
 
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-            <!--<nav id="mainNav" class="navbar navbar-default navbar-fixed-top wow fadeInDown " data-wow-delay="0.1s" style="visibility:hidden">-->
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand" >
-                        <a class="page-scroll" href="#page-top">
-                            <!--<img src="src/img/logo.png"/>-->
-                            AM
-                        </a>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <!--<nav id="mainNav" class="navbar navbar-default navbar-fixed-top wow fadeInDown " data-wow-delay="0.1s" style="visibility:hidden">-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand">
+                <a class="page-scroll" href="#page-top">
+                    <img src="src/img/logo.png"/>
+                    <!--AM-->
+                </a>
 
-                    </div>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" href="#page-top">Home</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about">About Us</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#services">Services</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#we">Who we are</a>
-                        </li>
-                        <!--                        
-                                                <li>
-                                                    <a class="page-scroll" href="#portfolio">Artists</a>
-                                                </li>
-                        -->
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <section id="home" class="full-height">
-            <header>
-                <div id="video-overlay"></div>
+        </div>
 
-                <video muted="" autoplay="" loop="false" id="bgvid">
-                    <source src="src/video/am_grow_tree.mp4" type="video/mp4">
-                </video>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#page-top">Home</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#we">Quienes Somos</a>
+                </li>
+                <!--
+                                        <li>
+                                            <a class="page-scroll" href="#portfolio">Artists</a>
+                                        </li>
+                -->
+                <li>
+                    <a class="page-scroll" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<section id="home" class="full-height2">
+    <!--<header>-->
+    <!--<div id="video-overlay"></div>-->
 
-                <div class="header-content">
-                    <div class="header-content-inner" style="color:red">
-                        <div data-wow-delay="0.3s" class="span3 wow lightSpeedIn">
-                            <!--<h1>AM Agency</h1>-->
-                        </div>
-                        <div data-wow-delay="0.5s" class="span3 wow rollIn" >
-                            <!--<p style="color:red">Grow with us</p>-->
-                        </div>
-                        <div data-wow-delay="0.7s" class="span3 wow bounceInUp">
-                            <!--<a href="#contact" class="btn btn-primary btn-xl page-scroll">Contact Us</a>-->
+    <!--<video muted="" autoplay="" loop="false" id="bgvid">-->
+    <!--<source src="src/video/am_home_video.mp4" type="video/mp4">-->
+    <!--</video>-->
+
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="filter"></div>
+            <video autoplay loop class="fillWidth">
+                <source src="src/video/am_home_video.mp4" type="video/mp4"/>
+                Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <!--<div class="poster hidden">-->
+            <!--<img src="PATH_TO_JPEG" alt="">-->
+            <!--</div>-->
+        </div>
+    </div>
+
+    <!--<div class="header-content">-->
+    <!--<div class="header-content-inner" style="color:red">-->
+    <!--<div data-wow-delay="0.3s" class="span3 wow lightSpeedIn">-->
+    <!--&lt;!&ndash;<h1>AM Agency</h1>&ndash;&gt;-->
+    <!--</div>-->
+    <!--<div data-wow-delay="0.5s" class="span3 wow rollIn" >-->
+    <!--&lt;!&ndash;<p style="color:red">Grow with us</p>&ndash;&gt;-->
+    <!--</div>-->
+    <!--<div data-wow-delay="0.7s" class="span3 wow bounceInUp">-->
+    <!--&lt;!&ndash;<a href="#contact" class="btn btn-primary btn-xl page-scroll">Contact Us</a>&ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</header>-->
+</section>
+
+<section id="about" class="full-height bg-primary">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+
+                <h2 class="section-heading">Sobre Nosotros</h2>
+
+                <p>
+                    En a. m. Agency nos enfocamos en hacer la vida de los artistas más fácil. Desde una mirada global y
+                    vanguardista gestionamos la comunicación y asesoramos a los artistas en sus proyectos de forma
+                    integral y en 360 grados, desarrollando estrategias a medida en diferentes áreas esenciales del
+                    crecimiento profesional como lo son el personal branding, diseño web, diseño gráfico, social media,
+                    comunicación y photobook, permitiendo al artista enfocarse en su vida, música, proyectos y giras.
+                </p>
+
+                <a href="#" class="btn btn-default btn-xl">I'M IN!</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="services" class="full-height">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Servicios</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-lg-4 text-center service-box">
+                <a href="#serviceModal1" data-toggle="modal">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-desktop wow bounceIn " data-wow-delay=".1s"></i>
+                        <h3>Web Design</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-4 text-center service-box">
+                <a href="#serviceModal2" data-toggle="modal">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-users wow bounceIn " data-wow-delay=".2s"></i>
+                        <h3>Social Media</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-4 text-center service-box">
+                <a href="#serviceModal3" data-toggle="modal">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-bullhorn wow bounceIn " data-wow-delay=".3s"></i>
+                        <h3>Communication</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-4 text-center service-box">
+                <a href="#serviceModal4" data-toggle="modal">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paint-brush wow bounceIn " data-wow-delay=".3s"></i>
+                        <h3>Graphic design</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-4 text-center service-box">
+                <a href="#serviceModal5" data-toggle="modal">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-user wow bounceIn "></i>
+                        <h3>Personal Branding</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-lg-4 text-center service-box">
+                <a href="#serviceModal6" data-toggle="modal">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-camera wow bounceIn " data-wow-delay=".3s"></i>
+                        <h3>Artist Book</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="we" class="full-height bg-primary">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-10 text-center">
+                <h2 class="section-heading">Quienes Somos</h2>
+
+                <p>
+                    Somos un equipo de profesionales creativos y proactivos, formado por distintos perfiles
+                    especializados en áreas como el marketing, comunicación, diseño gráfico, informática y music
+                    business, que unidos aportamos ideas innovadoras, desarrollando estrategias a medida para nuestros
+                    clientes. Am es energía, es impulso, es emoción y adaptación constante al cambio.
+                </p>
+
+                <strong class="text-info wow tada">
+                    “En a. m. nos encanta lo que hacemos, por eso buscamos la excelencia en nuestros resultados”
+                    <br/>
+                    <em>
+                        am Agency
+                    </em>
+                </strong>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section id="contact" class="full-height no-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Contacto!</h2>
+                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we
+                    will get back to you as soon as possible!</p>
+            </div>
+
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <form class="form-horizontal" role="form" method="post" action="index.php">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name"
+                                   placeholder="First & Last Name" value="">
                         </div>
                     </div>
-                </div>
-            </header>
-        </section>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email"
+                                   placeholder="example@domain.com" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="4" id="message" name="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--<div class="col-sm-10 col-sm-offset-2">-->
+                        <div class="col-sm-12">
+                            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <!-- Will be used to display an alert to the user -->
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-        <section id="about" class="full-height bg-primary" >
+            <!--<div id="physical-contact" class="col-lg-4">-->
+            <!--
+            -->
+            <!--
+                                <div id="physical-contact" class="row">
+                                    <div class="col-xs-6 col-lg-offset-3 col-lg-3 text-center">
+                                        <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                                        <p>123-456-6789</p>
+                                    </div>
+                                    <div class="col-xs-6  col-lg-3 text-center">
+                                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                                        <p><a href="mailto:contact@amagency.net">contact@amagency.net</a></p>
+                                    </div>
+                                </div>
+            -->
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center" >
-
-                        <h2 class="section-heading">About!</h2>
-
-                        <p>
-                            En a. m. Agency nos enfocamos en hacer la vida de los artistas más fácil.
-                            Desde una mirada global y vanguardista gestionamos la comunicación y asesoramos a los artistas en sus proyectos de forma integral y en 360 grados, desarrollando estrategias a medida en diferentes áreas esenciales del crecimiento profesional como lo son el personal branding, diseño web, diseño gráfico, social media, comunicación y photobook, permitiendo al artista enfocarse en su vida, música, proyectos y giras.
-                        </p>
-
-                        <a href="#" class="btn btn-default btn-xl">I'M IN!</a>
+            <div class="col-lg-12">
+                <div id="nz-socials">
+                    <div class="social">
+                        <a href="mailto:contact@amagency.net" class="bg-color-brand"><i class="fa fa-envelope"></i></a>
+                        <div>
+                            <p>contact@amagency.net</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="bg-color-facebook"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="bg-color-twitter"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="bg-color-instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="bg-color-brand"><i class="fa fa-phone"></i></a>
+                        <div>
+                            <p>+34 637 656 753</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-        <section id="services" class="full-height">
-
+        </div>
+    </div>
+</section>
+<!-- Services Modals -->
+<div class="hidden-modals">
+    <div class="full-screen-modal modal fade" id="serviceModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">What we do</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-lg-4 text-center service-box">
-                        <a href="#serviceModal1" data-toggle="modal">
-                            <div class="service-box">
-                                <i class="fa fa-4x fa-desktop wow bounceIn " data-wow-delay=".1s"></i>
-                                <h3>Web Design</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-lg-4 text-center service-box">
-                        <a href="#serviceModal2" data-toggle="modal">
-                            <div class="service-box">
-                                <i class="fa fa-4x fa-users wow bounceIn " data-wow-delay=".2s"></i>
-                                <h3>Social Media</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-lg-4 text-center service-box">
-                        <a href="#serviceModal3" data-toggle="modal">
-                            <div class="service-box">
-                                <i class="fa fa-4x fa-bullhorn wow bounceIn " data-wow-delay=".3s"></i>
-                                <h3>Communication</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-lg-4 text-center service-box">
-                        <a href="#serviceModal4" data-toggle="modal">
-                            <div class="service-box">
-                                <i class="fa fa-4x fa-paint-brush wow bounceIn " data-wow-delay=".3s"></i>
-                                <h3>Graphic design</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-lg-4 text-center service-box">
-                        <a href="#serviceModal5"  data-toggle="modal">
-                            <div class="service-box">
-                                <i class="fa fa-4x fa-user wow bounceIn "></i>
-                                <h3>Personal Branding</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-6 col-lg-4 text-center service-box">
-                        <a href="#serviceModal6"  data-toggle="modal">
-                            <div class="service-box">
-                                <i class="fa fa-4x fa-camera wow bounceIn " data-wow-delay=".3s"></i>
-                                <h3>Artist Book</h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Diseño web</h2>
+                            <img src="src/img/services/web_design.jpg">
+                            <div class="modal-text">
 
-        <section id="we" class="full-height bg-primary">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-offset-1 col-lg-10 text-center">
-                        <h2 class="section-heading">Quienes Somos</h2>
-
-                        <p>
-                            Somos un equipo de profesionales creativos y proactivos, formado por distintos perfiles especializados en áreas como el marketing, comunicación, diseño gráfico, informática y music business, que unidos aportamos ideas innovadoras, desarrollando estrategias a medida para nuestros clientes. Am es energía, es impulso, es emoción y adaptación constante al cambio.
-                        </p>
-
-                        <strong class="text-info wow tada">
-                            “En a. m. nos encanta lo que hacemos, por eso buscamos la excelencia en nuestros resultados”
-                            <br/>
-                            <em>
-                                am Agency
-                            </em>
-                        </strong>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
-        <section id="contact" class="full-height no-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Let's Get In Touch!</h2>
-                        <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-offset-3 text-center">
-                        <form class="form-horizontal" role="form" method="post" action="index.php">
-                            <div class="form-group">
-                                <label for="name" class="col-sm-2 control-label">Name</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="col-sm-2 control-label">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="col-sm-2 control-label">Message</label>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" rows="4" name="message"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <!--<div class="col-sm-10 col-sm-offset-2">-->
-                                <div class="col-sm-12">
-                                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-10 col-sm-offset-2">
-                                    <!-- Will be used to display an alert to the user -->
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!--<div id="physical-contact" class="col-lg-4">-->
-                    <!--                        
-                    -->
-                    <!--                    
-                                        <div id="physical-contact" class="row">
-                                            <div class="col-xs-6 col-lg-offset-3 col-lg-3 text-center">
-                                                <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                                                <p>123-456-6789</p>
-                                            </div>
-                                            <div class="col-xs-6  col-lg-3 text-center">
-                                                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                                                <p><a href="mailto:contact@amagency.net">contact@amagency.net</a></p>
-                                            </div>
-                                        </div>
-                    -->
-
-                    <div class="col-lg-12">
-                        <div id="nz-socials">
-                            <div class="social">
-                                <a href="mailto:contact@amagency.net" class="bg-color-brand"><i class="fa fa-envelope"></i></a>
-                                <div>
-                                    <p>contact@amagency.net</p>
-                                </div>
-                            </div>
-                            <div class="social">
-                                <a href="#" class="bg-color-facebook"><i class="fa fa-facebook"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="#" class="bg-color-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="#" class="bg-color-instagram"><i class="fa fa-instagram"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="#" class="bg-color-brand"><i class="fa fa-phone"></i></a>
-                                <div>
-                                    <p>+34 637 656 753</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services Modals -->
-        <div class="hidden-modals">
-            <div class="full-screen-modal modal fade" id="serviceModal1" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <h2>Web Design</h2>
-                                    <img src="src/img/services/web_design.png">
-
-                                    <p>
-                                        Diseñamos y desarrollamos páginas webs para artistas y Djs/productores,
-                                        elaborando websites de calidad y abordando las necesidades de comunicación de nuestros clientes.
-                                    </p>
-                                    <ul class="list-inline item-details">
-                                        <li>Client:
-                                            <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                            </strong>
-                                        </li>
-                                        <li>Date:
-                                            <strong><a href="http://startbootstrap.com">April 2014</a>
-                                            </strong>
-                                        </li>
-                                        <li>Service:
-                                            <strong><a href="http://startbootstrap.com">Web Development</a>
-                                            </strong>
-                                        </li>
-                                    </ul>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-screen-modal modal fade" id="serviceModal2" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <h2>Social Media</h2>
-                                    <img src="src/img/services/social_media.png">
-
-                                    <p>
-                                        Creamos y gestionamos las cuentas de social media de nuestros clientes, entregando 
-                                        seguridad y confianza a la hora de crear o compartir contenidos con fans o seguidores. 
-                                        Elaboramos contenidos únicos y personalizados según las necesidades de los artistas.
-                                    </p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-screen-modal modal fade" id="serviceModal3" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <h2>Communication</h2>
-                                    <img src="src/img/services/communication.png">
-
-                                    <p>
-                                        Sabemos lo importante de transmitir lo que realmente se quiere comunicar, es por 
-                                        esto que hoy en día la comunicación se ha convertido en una herramienta estratégica 
-                                        esencial dentro de la carrera profesional de todo artista. En AM Agency gestionamos 
-                                        la comunicación de nuestros clientes, creando estrategias y difundiendo contenidos 
-                                        como notas de prensa, comunicados oficiales, email marketing, newsletters, promoción 
-                                        y más componentes fundamentales para el crecimiento del artista. 
-                                    </p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-screen-modal modal fade" id="serviceModal4" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <h2>Graphic Design</h2>
-                                    <img src="src/img/services/graphic_design.png">
-
-                                    <p>
-                                        Creamos el diseño gráfico que requiere el concepto de nuestro cliente. 
-                                        Desarrollamos creativamente las ideas que el artista expresa con su música 
-                                        por medio de elementos visuales. 
-                                    </p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-screen-modal modal fade" id="serviceModal5" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <h2>Personal branding</h2>
-                                    <img src="src/img/services/personal_branding.png">
-
-                                    <p>
-                                        Identificamos y desarrollamos la marca personal de nuestros clientes ayudando 
-                                        a que puedan cumplir sus objetivos como artistas. 
-                                    </p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="full-screen-modal modal fade" id="serviceModal6" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <div class="modal-body">
-                                    <h2>Artist Book</h2>
-                                    <img src="src/img/services/artist_book.png">
-                                    <p>
-                                        Sabemos lo importante que es la imagen del artista, es por esto que contamos con una amplia gama de profesionales 
-                                        en artes visuales, expertos en capturar la esencia del artista y en desarrollar un perfil único para cada cliente
-                                    </p>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                                </div>
+                                <p>
+                                    Diseñamos y desarrollamos páginas webs para artistas y Djs/productores,
+                                    elaborando websites de calidad y abordando las necesidades de comunicación de
+                                    nuestros
+                                    clientes.
+                                </p>
+                                <!--<ul class="list-inline item-details">-->
+                                <!--<li>Client:-->
+                                <!--<strong><a href="http://startbootstrap.com">Start Bootstrap</a>-->
+                                <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Date:-->
+                                <!--<strong><a href="http://startbootstrap.com">April 2014</a>-->
+                                <!--</strong>-->
+                                <!--</li>-->
+                                <!--<li>Service:-->
+                                <!--<strong><a href="http://startbootstrap.com">Web Development</a>-->
+                                <!--</strong>-->
+                                <!--</li>-->
+                                <!--</ul>-->
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end modals-->
+    </div>
+    <div class="full-screen-modal modal fade" id="serviceModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Social Media</h2>
+                            <img src="src/img/services/social_media.jpg">
+                            <div class="modal-text">
 
-        <div id="footer-scripts">
-
-            <!-- jQuery -->
-            <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
-            <!-- Bootstrap Core JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-            <script src="dist/build/app.js"></script>
-            <script>
-                $(function () { // wait for document ready
-                    new WOW().init();
-                });
-            </script>
+                                <p>
+                                    Creamos y gestionamos las cuentas de social media de nuestros clientes, entregando
+                                    seguridad y confianza a la hora de crear o compartir contenidos con fans o
+                                    seguidores.
+                                    Elaboramos contenidos únicos y personalizados según las necesidades de los artistas.
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="full-screen-modal modal fade" id="serviceModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Communication</h2>
+                            <img src="src/img/services/communication.jpg">
+                            <div class="modal-text">
 
-    </body>
+                                <p>
+                                    Sabemos lo importante de transmitir lo que realmente se quiere comunicar, es por
+                                    esto que hoy en día la comunicación se ha convertido en una herramienta estratégica
+                                    esencial dentro de la carrera profesional de todo artista. En AM Agency gestionamos
+                                    la comunicación de nuestros clientes, creando estrategias y difundiendo contenidos
+                                    como notas de prensa, comunicados oficiales, email marketing, newsletters, promoción
+                                    y más componentes fundamentales para el crecimiento del artista.
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-screen-modal modal fade" id="serviceModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Graphic Design</h2>
+                            <img src="src/img/services/graphic_design.jpg">
+                            <div class="modal-text">
+
+                                <p>
+                                    Creamos el diseño gráfico que requiere el concepto de nuestro cliente.
+                                    Desarrollamos creativamente las ideas que el artista expresa con su música
+                                    por medio de elementos visuales.
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-screen-modal modal fade" id="serviceModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Personal branding</h2>
+                            <img src="src/img/services/personal_branding.jpg">
+                            <div class="modal-text">
+
+                                <p>
+                                    Identificamos y desarrollamos la marca personal de nuestros clientes ayudando
+                                    a que puedan cumplir sus objetivos como artistas.
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-screen-modal modal fade" id="serviceModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Artist Book</h2>
+                            <img src="src/img/services/artist_book.jpg">
+
+                            <div class="modal-text">
+                                <p>
+                                    Sabemos lo importante que es la imagen del artista, es por esto que contamos con una
+                                    amplia gama de profesionales
+                                    en artes visuales, expertos en capturar la esencia del artista y en desarrollar un
+                                    perfil único para cada cliente
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i
+                                        class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end modals-->
+
+<div id="footer-scripts">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="dist/build/app.js"></script>
+    <script>
+        $(function () { // wait for document ready
+            new WOW().init();
+        });
+    </script>
+    <script>
+        //jQuery is required to run this code
+        $(document).ready(function () {
+
+            scaleVideoContainer();
+
+            initBannerVideoSize('.video-container .poster img');
+            initBannerVideoSize('.video-container .filter');
+            initBannerVideoSize('.video-container video');
+
+            $(window).on('resize', function () {
+                scaleVideoContainer();
+                scaleBannerVideoSize('.video-container .poster img');
+                scaleBannerVideoSize('.video-container .filter');
+                scaleBannerVideoSize('.video-container video');
+            });
+
+        });
+
+        function scaleVideoContainer() {
+
+            var height = $(window).height() + 5;
+            var unitHeight = parseInt(height) + 'px';
+            $('.homepage-hero-module').css('height', unitHeight);
+
+        }
+
+        function initBannerVideoSize(element) {
+
+            $(element).each(function () {
+                $(this).data('height', $(this).height());
+                $(this).data('width', $(this).width());
+            });
+
+            scaleBannerVideoSize(element);
+
+        }
+
+        function scaleBannerVideoSize(element) {
+
+            var windowWidth = $(window).width(),
+                    windowHeight = $(window).height() + 5,
+                    videoWidth,
+                    videoHeight;
+
+            console.log(windowHeight);
+
+            $(element).each(function () {
+                var videoAspectRatio = $(this).data('height') / $(this).data('width');
+
+                $(this).width(windowWidth);
+
+                if (windowWidth < 1000) {
+                    videoHeight = windowHeight;
+                    videoWidth = videoHeight / videoAspectRatio;
+                    $(this).css({'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px'});
+
+                    $(this).width(videoWidth).height(videoHeight);
+                }
+
+                $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+            });
+        }
+    </script>
+</div>
+
+</body>
 </html>
